@@ -1,40 +1,63 @@
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
-      <tr> <td>09:00</td>  <td>Automating Tasks with the Unix Shell</td> </tr>
-      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
-      <tr> <td>11:00</td>  <td>Automating Tasks with the Unix Shell (Continued)</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      {% if site.flavor == "r" %}
-      <tr> <td>13:00</td>  <td>Building Programs with R</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Building Programs with R (Continued)</td> </tr>
-      {% elsif site.flavor == "python" %}
-      <tr> <td>13:00</td>  <td>Building Programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Building Programs with Python (Continued)</td> </tr>
-      {% else %}
-      {% include warning-flavor.html %}
-      {% endif %}
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>16:30</td>  <td>END</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version Control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
-      <tr> <td>11:00</td>  <td>Version Control with Git (Continued)</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing Data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Managing Data with SQL (Continued)</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>16:30</td>  <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Post-workshop Survey</a></td> </tr>
-      <tr> <td>16:40</td>  <td>END</td> </tr>
-    </table>
-  </div>
+<div class="col-md-6">
+	<div style="font-weight:bold;color:red">Please note: This schedule is merely a guidance.
+		We try to stick to it but based on the progress of the group we might spend less or
+		more time on each section than indicated. We do however avoid running over the
+		published times for the day which is 09:00 to 17:00.
+	</div>
+</div>
+<table class="table table-striped">
+<tr><th>Start</th><th>Duration (minutes)</th><th>End</th><th>Episode</th></tr>
+<tr>
+	<td>09:00</td><td>15</td><td>09:15</td><td><a href="-">Introduction</a></td>
+</tr>
+<tr>
+	<td>09:15</td><td>10</td><td>09:25</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/01-basics.html">Automated Version Control</a></td>
+</tr>
+<tr>
+	<td>09:25</td><td>10</td><td>09:35</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/02-setup.html">Setting Up Git</a></td>
+</tr>
+<tr>
+	<td>09:35</td><td>15</td><td>09:50</td><td><a href="-">BREAK</a></td>
+</tr>
+<tr>
+	<td>09:50</td><td>20</td><td>10:10</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/03-create.html">Creating a Repository</a></td>
+</tr>
+<tr>
+	<td>10:10</td><td>40</td><td>10:50</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/04-changes.html">Tracking Changes</a></td>
+</tr>
+<tr>
+	<td>10:50</td><td>25</td><td>11:15</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/05-history.html">Exploring History</a></td>
+</tr>
+<tr>
+	<td>11:15</td><td>10</td><td>11:25</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/06-ignore.html">Ignoring Things</a></td>
+</tr>
+<tr>
+	<td>11:25</td><td>45</td><td>12:10</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/07-github.html">Remotes in GitHub</a></td>
+</tr>
+<tr>
+	<td>12:10</td><td>60</td><td>13:10</td><td><a href="-">LUNCH</a></td>
+</tr>
+<tr>
+	<td>13:10</td><td>20</td><td>13:30</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/08-collab.html">Collaborating</a></td>
+</tr>
+<tr>
+	<td>13:30</td><td>15</td><td>13:45</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/09-conflict.html">Conflicts</a></td>
+</tr>
+<tr>
+	<td>13:45</td><td>5</td><td>13:50</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/10-open.html">Open Science</a></td>
+</tr>
+<tr>
+	<td>13:50</td><td>5</td><td>13:55</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/11-licensing.html">Licensing</a></td>
+</tr>
+<tr>
+	<td>13:55</td><td>15</td><td>14:10</td><td><a href="-">BREAK</a></td>
+</tr>
+<tr>
+	<td>14:10</td><td>2</td><td>14:12</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/12-citation.html">Citation</a></td>
+</tr>
+<tr>
+	<td>14:12</td><td>10</td><td>14:22</td><td><a href="https://swcarpentry.github.io/git-novice/instructor/12-citation.html">Hosting</a></td>
+</tr>
+</table>
+</div>
 </div>
